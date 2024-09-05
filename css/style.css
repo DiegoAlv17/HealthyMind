@@ -2,3 +2,10 @@
     padding: 1rem 2rem;
     font-size: 1.2rem;
 }
+
+section{
+    padding: 100px 0;
+}
+.hero {
+    background-color: #F5E9E2;
+}
