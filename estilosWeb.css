@@ -1,0 +1,92 @@
+/* Cambia el color de fondo del botón del acordeón */
+.accordion-button {
+    background-color: #3c4479; /* Aplicación directa del nuevo color */
+    color: #ffff;
+    border-radius: 24px;
+}
+
+/* Cambia el color de fondo del acordeón cuando está activo */
+.accordion-button:not(.collapsed) {
+    background-color: #a3ebf2; /* Aplicación directa del nuevo color */
+}
+
+.accordion-body {
+    background-color: #e5ecf5;
+}
+
+.texto-uno {
+    display: contents;
+    color: #e4507c;
+}
+
+.texto-dos {
+    display: contents;
+    color: #140345a9;
+}
+
+/* Ajusta el espaciado del encabezado y el párrafo */
+h2 {
+    margin-bottom: 0.5rem; /* Ajusta según sea necesario */
+}
+
+p {
+    margin-bottom: 0.5rem; /* Ajusta según sea necesario para reducir el espacio */
+}
+
+/* Ajusta el espaciado entre la imagen y el acordeón */
+.img-container {
+    margin-bottom: 1rem; /* Ajusta según sea necesario */
+}
+
+/* Ajusta el espaciado superior del acordeón */
+.accordion {
+    margin-top: 0; /* Ajusta según sea necesario */
+}
+
+/* Ajusta el espaciado del contenedor */
+.container {
+    padding-top: 2rem; /* Ajusta el espaciado superior según sea necesario */
+    padding-bottom: 2rem; /* Ajusta el espaciado inferior según sea necesario */
+}
+
+/* Estilo para la columna que contiene la imagen */
+.col-xl-6.col-lg-5 {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra horizontalmente */
+    padding: 0; /* Elimina el espaciado interno si es necesario */
+}
+
+/* Estilo para la imagen */
+.img-pr {
+    max-width: 90%; /* Ajusta el ancho máximo */
+    height: auto; /* Mantiene la proporción de la imagen */
+    width: auto;
+}
+
+/* Ajusta el espaciado y alineación en el contenedor de la imagen */
+.img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra horizontalmente */
+    flex-direction: column; /* Asegura que la imagen esté en columna */
+    height: 100%; /* Asegura que el contenedor ocupa todo el alto disponible */
+    overflow: hidden; /* Evita el desbordamiento de la imagen */
+}
+
+/* Mantiene la imagen centrada verticalmente en pantallas más grandes */
+@media (min-width: 992px) {
+    .img-container {
+        height: calc(100vh - 2 * 20px); /* Ajusta la altura si es necesario, considerando márgenes y rellenos */
+    }
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 991px) {
+    .img-container {
+        height: auto; /* Ajusta la altura a contenido según sea necesario */
+    }
+}
+
+
+
