@@ -2,26 +2,63 @@
 .accordion-button {
     background-color: #3c4479; /* Aplicación directa del nuevo color */
     color: #ffff;
-    border-radius: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Cambia el color de fondo del acordeón cuando está activo */
 .accordion-button:not(.collapsed) {
     background-color: #a3ebf2; /* Aplicación directa del nuevo color */
+    color: #140345;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
 .accordion-body {
-    background-color: #e5ecf5;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+
+
+.texto-pregunta, .texto-descarga{
+    text-align: center;
+    align-items: center;
+}
+
+.texto-descarga{
+    color: #140345;
+    font-weight: 600;
+}
+
+
 
 .texto-uno {
     display: contents;
-    color: #e4507c;
+    color: #910036;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: -2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .texto-dos {
     display: contents;
     color: #140345a9;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: -2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.texto-tres{
+    color: #636363; /* Color */
+    font-size: 3rem; /* Tamaño de fuente grande */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra sutil */
+    letter-spacing: 1px; /* Espaciado entre letras */
+    font-weight: 600; /* Peso de fuente semi-negrita */
+}
+
+.texto-cuatro{
+    color: #ff0000; /* Rojo brillante */
+    font-size: 3rem; /* Tamaño de fuente grande */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra sutil */
+    letter-spacing: 1px; /* Espaciado entre letras */
+    font-weight: 600; /* Peso de fuente semi-negrita */
 }
 
 /* Ajusta el espaciado del encabezado y el párrafo */
@@ -41,6 +78,7 @@ p {
 /* Ajusta el espaciado superior del acordeón */
 .accordion {
     margin-top: 0; /* Ajusta según sea necesario */
+    align-items: ;
 }
 
 /* Ajusta el espaciado del contenedor */
@@ -49,19 +87,36 @@ p {
     padding-bottom: 2rem; /* Ajusta el espaciado inferior según sea necesario */
 }
 
-/* Estilo para la columna que contiene la imagen */
-.col-xl-6.col-lg-5 {
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Centra horizontalmente */
-    padding: 0; /* Elimina el espaciado interno si es necesario */
+.bg-download {
+    background-image: url('../imagenes/img-descarga.jpg'); /* Asegúrate de que esta ruta sea correcta */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Asegura que el botón tenga su tamaño original al principio */
+.btn-animado {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Animación de agrandado al pasar el cursor */
+.btn-animado:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn-custom {
+    padding: 15px 30px; /* Ajusta el padding para agrandar el relleno */
+    font-size: 1.25rem; /* Ajusta el tamaño del texto si es necesario */
 }
 
 /* Estilo para la imagen */
 .img-pr {
-    max-width: 90%; /* Ajusta el ancho máximo */
+    max-width: 99%; /* Ajusta el ancho máximo */
     height: auto; /* Mantiene la proporción de la imagen */
     width: auto;
+    box-shadow: 0 20px 24px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
 }
 
 /* Ajusta el espaciado y alineación en el contenedor de la imagen */
