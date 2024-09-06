@@ -87,11 +87,18 @@ p {
     padding-bottom: 2rem; /* Ajusta el espaciado inferior según sea necesario */
 }
 
-.bg-download {
+/*Estilos de fondo para la sección "Descarga"*/
+.bg-descarga {
     background-image: url('../imagenes/img-descarga.jpg'); /* Asegúrate de que esta ruta sea correcta */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+/*Estilos de fondo para la sección "Footer"*/
+
+.bg-footer{
+    background: #041030;
 }
 
 /* Asegura que el botón tenga su tamaño original al principio */
@@ -110,13 +117,19 @@ p {
     font-size: 1.25rem; /* Ajusta el tamaño del texto si es necesario */
 }
 
-/* Estilo para la imagen */
+/* Estilo para la imagen en la sección "Pregunta"*/
 .img-pr {
     max-width: 99%; /* Ajusta el ancho máximo */
     height: auto; /* Mantiene la proporción de la imagen */
     width: auto;
     box-shadow: 0 20px 24px rgba(0, 0, 0, 0.2);
     border-radius: 30px;
+}
+
+/* Estilo para el logo en la sección "Footer"*/
+
+.img-ft{
+    max-width: 150px;
 }
 
 /* Ajusta el espaciado y alineación en el contenedor de la imagen */
