@@ -142,6 +142,36 @@ p {
     overflow: hidden; /* Evita el desbordamiento de la imagen */
 }
 
+/*Ícono de WhatsApp*/
+
+/* Estilos para el ícono de WhatsApp flotante */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px; /* Ajusta el valor según tu necesidad */
+    right: 20px;  /* Ajusta el valor según tu necesidad */
+    background-color: #25D366; /* Color de fondo de WhatsApp */
+    border-radius: 80%;
+    padding: 10px;
+    width: 80px;  /* Ajusta el ancho del botón */
+    height: 80px; /* Ajusta la altura del botón */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    z-index: 1000; /* Asegura que el ícono esté encima de otros elementos */
+}
+
+.whatsapp-float a {
+    color: #fff; /* Color del ícono */
+    text-decoration: none;
+    font-size: 2.5rem;
+}
+
+.whatsapp-float a:hover {
+    color: #e5e5e5; /* Color del ícono al pasar el cursor */
+}
+
+
 /* Mantiene la imagen centrada verticalmente en pantallas más grandes */
 @media (min-width: 992px) {
     .img-container {
