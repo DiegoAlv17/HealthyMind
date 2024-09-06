@@ -1,0 +1,174 @@
+/* Cambia el color de fondo del botón del acordeón */
+.accordion-button {
+    background-color: #ff5f5f; /* Aplicación directa del nuevo color */
+    color: #ffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Cambia el color de fondo del acordeón cuando está activo */
+.accordion-button:not(.collapsed) {
+    background-color: #a3ebf2; /* Aplicación directa del nuevo color */
+    color: #140345;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.accordion-body {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.texto-pregunta, .texto-descarga{
+    text-align: center;
+    align-items: center;
+}
+
+.texto-descarga{
+    color: #140345;
+    font-weight: 600;
+}
+
+
+
+.texto-uno {
+    display: contents;
+    color: #910036;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: -2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.texto-dos {
+    display: contents;
+    color: #140345a9;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: -2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.texto-tres{
+    color: #636363; /* Color */
+    font-size: 3rem; /* Tamaño de fuente grande */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra sutil */
+    letter-spacing: 1px; /* Espaciado entre letras */
+    font-weight: 600; /* Peso de fuente semi-negrita */
+}
+
+.texto-cuatro{
+    color: #ff0000; /* Rojo brillante */
+    font-size: 3rem; /* Tamaño de fuente grande */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra sutil */
+    letter-spacing: 1px; /* Espaciado entre letras */
+    font-weight: 600; /* Peso de fuente semi-negrita */
+}
+
+/* Ajusta el espaciado del encabezado y el párrafo */
+h2 {
+    margin-bottom: 0.5rem; /* Ajusta según sea necesario */
+}
+
+p {
+    margin-bottom: 0.5rem; /* Ajusta según sea necesario para reducir el espacio */
+}
+
+/* Ajusta el espaciado entre la imagen y el acordeón */
+.img-container {
+    margin-bottom: 1rem; /* Ajusta según sea necesario */
+}
+
+/* Ajusta el espaciado superior del acordeón */
+.accordion {
+    margin-top: 0; /* Ajusta según sea necesario */
+    align-items: center;
+}
+
+/* Ajusta el espaciado del contenedor */
+/* .container {
+    padding-top: 2rem; 
+    padding-bottom: 2rem; 
+} */
+
+/*Estilos de fondo para la sección "Descarga"*/
+.bg-descarga {
+    background-image: url('../imagenes/img-descarga.jpg'); /* Asegúrate de que esta ruta sea correcta */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*Estilos de fondo para la sección "Footer"*/
+
+.bg-footer{
+    background: #041030;
+}
+
+/* Asegura que el botón tenga su tamaño original al principio */
+.btn-animado {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Animación de agrandado al pasar el cursor */
+.btn-animado:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn-custom {
+    padding: 15px 30px; /* Ajusta el padding para agrandar el relleno */
+    font-size: 1.25rem; /* Ajusta el tamaño del texto si es necesario */
+}
+
+/* Estilo para la imagen en la sección "Pregunta"*/
+.img-pr {
+    max-width: 99%; /* Ajusta el ancho máximo */
+    height: auto; /* Mantiene la proporción de la imagen */
+    width: auto;
+    box-shadow: 0 20px 24px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+}
+
+/* Estilo para el logo en la sección "Footer"*/
+
+.img-ft{
+    max-width: 150px;
+}
+
+/* Ajusta el espaciado y alineación en el contenedor de la imagen */
+.img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column; 
+    height: 100%; 
+    overflow: hidden; 
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: auto;
+    z-index: 1000;
+}
+
+.whatsapp-float a:hover {
+    color: #e5e5e5;
+}
+
+
+/* Mantiene la imagen centrada verticalmente en pantallas más grandes */
+@media (min-width: 992px) {
+    .img-container {
+        height: calc(100vh - 2 * 20px); 
+    }
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 991px) {
+    .img-container {
+        height: auto; 
+    }
+}
+
+
+
