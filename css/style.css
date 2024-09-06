@@ -1,0 +1,38 @@
+.navbar{
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+}
+
+section{
+    padding: 100px 0;
+}
+.hero {
+    background-color: #F5E9E2;
+}
+.hero img {
+    max-width: 100%;
+    height: auto;
+}
+
+.service-img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    /* Asegura que la imagen mantenga su proporción */
+}
+
+.highlight-text {
+    color: #ff5f5f;
+    font-weight: bold;
+}
+
+.content {
+    background-color: #F5E9E2;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.fs-3:hover {
+    color: #ff5f5f;
+    transform: scale(1.1);
+}

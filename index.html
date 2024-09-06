@@ -1,13 +1,428 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Healthy Mind</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/estilosWeb.css">
 </head>
+
 <body>
-    <header>
-        <h1>Healthy Mind</h1>
-    </header>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md fixed-top" style="background-color: #FCF0E8;">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/hmLoguito.png" alt="Logo" width="30" height="24"
+                        class="d-inline-block align-text-top">
+                    Healthy Mind
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#negocios">Para negocios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#parati">Para ti</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#preguntas">Preguntas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#descargas">Descargas</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8 mb-4">
+                    <h1 class="display-4">Bienvenido a Healthy Mind</h1>
+                    <p class="lead">Descubre cómo podemos ayudarte a mejorar tu bienestar.</p>
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#videoModal"
+                        style="background-color: #E6417B;">
+                        Ver Video
+                    </button>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/salud.jpg" alt="Imagen de bienestar" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Video -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true" data-bs-backdrop="static">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="videoModalLabel">Sobre Nosotros</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/3p-5Qe0rDzk" title="Video de ejemplo"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="negocios" class="negocios-section"></section>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-6 col-md-12 mb-4">
+                <h2>¡Sé parte del cambio con <span class="highlight-text">HealthyMind!</span></h2>
+                <p>Amplía tu impacto como profesional de la salud mental con HEALTHYMIND, una plataforma innovadora
+                    que
+                    te permite brindar terapias personalizadas y acceder a herramientas avanzadas para el monitoreo
+                    del progreso de tus pacientes, todo desde un solo lugar.</p>
+                <a href="#" class="btn btn-outline-danger btn-lg" style="color: #ff5f5f;">Únete Ya!</a>
+            </div>
+
+            <div class="col-lg-6 col-md-12">
+                <div class="row">
+                    <div class="col-6 col-md-6 mb-4 col-12">
+                        <div class="text-center">
+                            <img src="img/reshot-icon-free-59EJS73B6K.png" alt="Incremento de clientes"
+                                class="service-img">
+                            <h5 class="mt-2">Incremento de clientes</h5>
+                            <p>Extiende tu número de pacientes, la posibilidad de ayudar a más personas está en ti</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6 mb-4 col-12">
+                        <div class="text-center">
+                            <img src="img/reshot-icon-relaxation-GTNRL435UY.png" alt="Análisis de datos"
+                                class="service-img">
+                            <h5 class="mt-2">Seguimiento continuo</h5>
+                            <p>Gestiona y acompaña a tus pacientes de manera integral, todo desde una sola app</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6 mb-4 col-12">
+                        <div class="text-center">
+                            <img src="img/reshot-icon-decision-making-82FGWKS9TP.png" alt="Marketing dirigido"
+                                class="service-img">
+                            <h5 class="mt-2">Gestiona tus consultas</h5>
+                            <p>Podrás llevar el control total de tus consultas, todo desde una sola app</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6 mb-4 col-12">
+                        <div class="text-center">
+                            <img src="img/reshot-icon-in-love-HBLJGF6QEM.png" alt="Diferenciación competitiva"
+                                class="service-img">
+                            <h5 class="mt-2">Diferenciación competitiva</h5>
+                            <p>Destaca mediante nuestro sistema de estrellas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="text-center">
+                <h2>Únete a la comunidad que cambia vidas</h2>
+                <p>Convierte cada consulta en una oportunidad de mejora</p>
+                <button class="btn btn-primary mb-2 mt-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    Registrarse
+                </button>
+            </div>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    <form class="mt-5">
+                        <div class="mb-4">
+                            <input type="text" class="form-control" id="businessName" placeholder="Ingresa su nombre">
+                        </div>
+                        <div class="mb-4">
+                            <input type="text" class="form-control" id="businessType" placeholder="Ingresa su apellido">
+                        </div>
+                        <div class="mb-4">
+                            <input type="email" class="form-control" id="contactEmail"
+                                placeholder="Ingresa el correo de contacto">
+                        </div>
+                        <div class="mb-4">
+                            <input type="tel" class="form-control" id="contactPhone"
+                                placeholder="Ingresa el teléfono de contacto">
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Persona natural
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Organización
+                            </label>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-success">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="parati"></section>
+    <div class="container">
+        <h2 class="highlight-text">Para ti</h2>
+        <p class="lead">Encuentra recursos y herramientas para cuidar tu salud mental.</p>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="https://i.pinimg.com/550x/4a/fb/e3/4afbe38c00df09a56a79c81157454035.jpg" class="img-fluid"
+                    alt="Soluciones para individuos">
+            </div>
+            <div class="col-md-6">
+                <h3>Tu bienestar primero</h3>
+
+                <p class="fs-3">Accede a guías y ejercicios de bienestar diseñados para ti.</p><br>
+                <p class="fs-3">No estás solo! Comparte con la comunidad lo que sientes.</p><br>
+                <p class="fs-3">Obten ayuda profesional al instante.</p><br>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section id="preguntas">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 py-4 d-flex flex-column justify-content-center">
+                    <div class="texto-pregunta mb-4">
+                        <h2 class="highlight-text">PREGUNTAS FRECUENTES</h2>
+                        <p>Aquí tienes las respuestas a las preguntas más frecuentes sobre nuestro aplicativo. Encuentra
+                            todo lo que necesitas saber de manera rápida y clara.</p>
+                    </div>
+                    <div>
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        ¿Qué servicios ofrece la plataforma?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Nuestra plataforma ofrece servicios de consultas
+                                        psicológicas a través de un aplicativo móvil, permitiendo a los usuarios agendar
+                                        citas con profesionales de salud mental certificados. Además, proporcionamos
+                                        acceso a recursos de bienestar emocional, programas de terapia en línea y apoyo
+                                        continuo a través de chat con especialistas.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
+                                        ¿Cómo puedo empezar a usar la aplicación?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Para comenzar, descarga la aplicación desde la tienda de
+                                        aplicaciones de tu dispositivo. Una vez instalada, abre la aplicación y
+                                        regístrate creando una cuenta con tus datos personales. Luego, podrás buscar y
+                                        agendar citas con los psicólogos disponibles según tu disponibilidad y
+                                        necesidades.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                        aria-controls="flush-collapseThree">
+                                        ¿Qué hago si tengo problemas con la aplicación?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body"> Si experimentas algún problema con la aplicación, por
+                                        favor, contacta a nuestro equipo de soporte técnico a través del chat en la
+                                        aplicación o envíanos un correo electrónico a soporte@psicologiapp.com. Estamos
+                                        disponibles para ayudarte a resolver cualquier inconveniente y asegurarnos de
+                                        que tengas la mejor experiencia posible.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                        aria-controls="flush-collapseFour">
+                                        ¿Cómo se protege mi información personal en la aplicación?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body"> Nuestra aplicación utiliza medidas de seguridad
+                                        avanzadas para proteger tu información personal. Todos los datos se almacenan en
+                                        servidores seguros y se encriptan durante la transmisión. Además, seguimos las
+                                        mejores prácticas y regulaciones de privacidad para garantizar la
+                                        confidencialidad y seguridad de tus datos.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 py-4 d-flex flex-column justify-content-center">
+                    <img class="img-fluid img-pr" src="./imagenes/img-pregunta.jpg" alt="Preguntas">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-descarga py-5" id="descargas">
+        <div class="container py-4 align-items-center">
+            <div class="row mb-1 justify-content-end">
+                <div class="col-md-9 col-lg-6 py-4">
+                    <h2 class="display-4 mb-3 text-center highlight-text">DESCÁRGALO YA!</h2>
+                    <p class="lead texto-descarga text-center">Empieza a mejorar tu bienestar mental y accede a nuestras
+                        funcionalidades exclusivas desde nuestro aplicativo.</p>
+                    <p class="lead texto-descarga text-center">¡Obtén la app y reserva tus citas ahora mismo!</p>
+                </div>
+            </div>
+            <div class="row mt-1 justify-content-end">
+                <div class="col-md-9 col-lg-6 py-4 text-center">
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <a href="https://play.google.com/store"
+                                class="btn btn-info btn-md btn-custom text-light rounded-pill w-40 btn-animado">
+                                <i class="bi bi-google-play"></i> Descárgalo desde Play Store
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://apps.apple.com/"
+                                class="btn btn-info btn-md btn-custom text-light rounded-pill w-40 btn-animado">
+                                <i class="bi bi-apple"></i> Descárgalo desde App Store
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-footer text-white pt-5 pb-4">
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left">
+
+                <!-- Columna de Información -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <img src="img/hmLoguito.png" alt="Logo" class="mb-4 img-ft">
+                    <p>Nuestra misión es conectar a las personas con apoyo psicológico accesible y de calidad,
+                        promoviendo el bienestar mental en cada cita.</p>
+                    <!-- Redes Sociales-->
+                    <div class="mt-3">
+                        <a href="#" class="text-white me-3">
+                            <i class="bi bi-facebook" style="font-size: 1.5rem;"></i>
+                        </a>
+                        <a href="#" class="text-white me-3">
+                            <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
+                        </a>
+                        <a href="#" class="text-white me-3">
+                            <i class="bi bi-twitter" style="font-size: 1.5rem;"></i>
+                        </a>
+                        <a href="#" class="text-white">
+                            <i class="bi bi-linkedin" style="font-size: 1.5rem;"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Columna de Enlaces -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold">Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none d-block mb-4">Inicio</a></li>
+                        <li><a href="#negocios" class="text-white text-decoration-none d-block mb-4">Para Negocios</a></li>
+                        <li><a href="#parati" class="text-white text-decoration-none d-block mb-4">Para Ti</a></li>
+                        <li><a href="#preguntas" class="text-white text-decoration-none d-block mb-4">Preguntas</a></li>
+                        <li><a href="#descargas" class="text-white text-decoration-none d-block mb-4">Descarga</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna de Recursos -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold">Soporte</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none d-block mb-4">Política de Privacidad</a>
+                        </li>
+                        <li><a href="#" class="text-white text-decoration-none d-block mb-4">Términos de Servicio</a>
+                        </li>
+                        <li><a href="#" class="text-white text-decoration-none d-block mb-4">Ubicación</a></li>
+                        <li><a href="#" class="text-white text-decoration-none d-block mb-4">Ayuda</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna de Contacto -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold">Contacto</h5>
+                    <div class="mb-4">
+                        <p><i class="bi bi-house-door-fill"></i> San Miguel, Lima, Perú</p>
+                        <p><i class="bi bi-house-door-fill"></i> Jesus María, Lima, Perú</p>
+                    </div>
+                    <div class="mb-4">
+                        <p><i class="bi bi-envelope-fill"></i> mr_null_5892@outlook.com</p>
+                        <p><i class="bi bi-envelope-fill"></i> proteus_nova1548@gmail.com</p>
+                    </div>
+                    <div class="mb-4">
+                        <p><i class="bi bi-telephone-fill"></i> +51 947 177 456</p>
+                        <p><i class="bi bi-telephone-fill"></i> +51 907 896 723</p>
+                    </div>
+                    <div class="mb-4">
+                        <p><i class="bi bi-globe"></i> www.Healthy-Mind.com</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Línea de Separación -->
+            <hr class="mb-4">
+
+            <!-- Sección de Copyright -->
+            <div class="row align-items-center">
+                <div class="col-md-12 col-lg-12">
+                    <p class="text-white text-center text-md-left">© 2024 Diseñado por Diego Napa & Pablo Boza. Todos
+                        los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón de WhatsApp flotante -->
+    <div class="contacto position-fixed bottom-0 end-0">
+        <a href="https://chat.whatsapp.com/BY8OP7ePUfNCUiEFTxyKKr" target="_blank">
+            <img src="img/whatsapp.png" alt="Imagen fija" class="whatsapp">
+        </a>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
