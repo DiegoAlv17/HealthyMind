@@ -1,0 +1,24 @@
+body {
+    background-image: url('../imagenes/fondo-login.png'); /* Cambia esto por el path de tu imagen */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: rgba(156, 149, 149, 0.7); /* Fondo gris con transparencia */
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+    text-align: center;
+    color: #57514c;
+}
